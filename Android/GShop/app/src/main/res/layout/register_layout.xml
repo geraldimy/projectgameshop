@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:weightSum="1"
+    >
+
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:weightSum="1"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_register"
+                    android:background="@drawable/circle"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:tint="@color/white"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:text="REGISTER"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/linear_layout"
+                android:rotation="45"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/rectangle"
+                android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageview1"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+            <ImageView
+                android:id="@+id/imageviewuser"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary"
+                android:padding="8dp"
+                android:src="@drawable/img_user"
+                android:tint="@color/white"
+                />
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_alignBottom="@id/imageviewuser"
+                android:layout_alignParentTop="true"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@id/imageviewuser"
+                android:background="@color/BG"
+                android:hint="Full Name"
+                android:paddingLeft="20dp"
+                android:textSize="15sp"/>
+
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativelayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout1"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageView
+                    android:id="@+id/imageviewuser2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/img_location"
+                    android:tint="@color/white"
+                    />
+                <EditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="match_parent"
+                    android:layout_alignBottom="@id/imageviewuser2"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPostalAddress"
+                    android:layout_toRightOf="@id/imageviewuser2"
+                    android:background="@color/BG"
+                    android:hint="Address"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativelayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout2"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageView
+                    android:id="@+id/imageviewuser3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/img_calendar"
+                    android:tint="@color/white"
+                    />
+                <EditText
+                    android:id="@+id/edt_birthdate"
+                    android:layout_width="match_parent"
+                    android:layout_alignBottom="@id/imageviewuser3"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content"
+
+                    android:clickable="true"
+                    android:editable="false"
+                    android:layout_toRightOf="@id/imageviewuser3"
+                    android:background="@color/BG"
+                    android:hint="BIrthdate"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp"/>
+
+
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:text="Sign Up"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                />
+        </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

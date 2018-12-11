@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <string name="app_name" translatable="false">G-Shop</string>
+    <string name="FACEBOOK_APP_ID" translatable="false">575430552890405</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN" translatable="false">2f29a471fe8a5617ef403be2aa25694b</string>
+    <string name="title_activity_home" translatable="false">HomeActivity</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="title_activity_nearby_store" translatable="false">Map</string>
+    <string name="title_activity_welcome" translatable="false">Home Screen</string>
+    <string name="next" translatable="false">NEXT</string>
+    <string name="skip" translatable="false">SKIP</string>
+    <string name="start" translatable="false">GOT IT</string>
+
+    <string name="slide_1_title" translatable="false">Hello Gamers!</string>
+    <string name="slide_1_desc" translatable="false">Welcome To G-Shop Application! </string>
+
+    <string name="slide_2_title" translatable="false">Easy Shop</string>
+    <string name="slide_2_desc" translatable="false">shopping is easier and also cheaper! </string>
+
+    <string name="slide_3_title" translatable="false">Great Discounts</string>
+    <string name="slide_3_desc" translatable="false">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title" translatable="false">Select Shop</string>
+    <string name="slide_4_desc" translatable="false">Select the closest store</string>
+
+    <string name="play_again_desc" translatable="false">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again" translatable="false">Play Again</string>
+</resources>
+
